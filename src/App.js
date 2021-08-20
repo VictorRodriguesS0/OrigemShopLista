@@ -2,15 +2,20 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/layout/NavBar";
 import Dashboard from "./components/layout/Dashboard";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <div className="container">
-        <Dashboard />
+    <Router>
+      <div className="App">
+        <NavBar />
+        <div className="container">
+          <Switch>
+            <Dashboard />
+          </Switch>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

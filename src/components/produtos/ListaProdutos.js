@@ -11,6 +11,7 @@ export default class ListaProdutos extends Component {
   async componentDidMount() {
     const res = await axios.get(this.state.url);
     this.setState({ produto: res.data });
+    console.log(this.state);
   }
 
   render() {
@@ -19,7 +20,12 @@ export default class ListaProdutos extends Component {
         {this.state.produto ? (
           <div className="row">
             {this.state.produto.map((produto) => (
-              <Produto />
+              <Produto
+                key={produto.titulo}
+                titulo={produto.titulo}
+                preco={produto.preco}
+                imagem={produto.imagem}
+              />
             ))}
           </div>
         ) : (
