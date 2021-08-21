@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import Produto from "./Produto";
+import CardProduto from "./CardProduto";
 import axios from "axios";
 
 export default class ListaProdutos extends Component {
@@ -20,9 +20,11 @@ export default class ListaProdutos extends Component {
         {this.state.produto ? (
           <div className="row">
             {this.state.produto.map((produto) => (
-              <Produto
-                key={produto.titulo}
+              <CardProduto
+                key={produto.id}
+                id={produto.id}
                 titulo={produto.titulo}
+                descricao={produto.descricao}
                 preco={produto.preco}
                 imagem={produto.imagem}
               />
