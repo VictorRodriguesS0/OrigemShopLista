@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/origemshoplista.github.io/static/css/main.0a83420c.chunk.css",
-    "main.js": "/origemshoplista.github.io/static/js/main.7d81cd15.chunk.js",
-    "main.js.map": "/origemshoplista.github.io/static/js/main.7d81cd15.chunk.js.map",
+    "main.js": "/origemshoplista.github.io/static/js/main.d44e5ba7.chunk.js",
+    "main.js.map": "/origemshoplista.github.io/static/js/main.d44e5ba7.chunk.js.map",
     "runtime-main.js": "/origemshoplista.github.io/static/js/runtime-main.eff379db.js",
     "runtime-main.js.map": "/origemshoplista.github.io/static/js/runtime-main.eff379db.js.map",
     "static/css/2.c490997a.chunk.css": "/origemshoplista.github.io/static/css/2.c490997a.chunk.css",
-    "static/js/2.6c30b316.chunk.js": "/origemshoplista.github.io/static/js/2.6c30b316.chunk.js",
-    "static/js/2.6c30b316.chunk.js.map": "/origemshoplista.github.io/static/js/2.6c30b316.chunk.js.map",
+    "static/js/2.d5ab0518.chunk.js": "/origemshoplista.github.io/static/js/2.d5ab0518.chunk.js",
+    "static/js/2.d5ab0518.chunk.js.map": "/origemshoplista.github.io/static/js/2.d5ab0518.chunk.js.map",
     "static/js/3.be88be88.chunk.js": "/origemshoplista.github.io/static/js/3.be88be88.chunk.js",
     "static/js/3.be88be88.chunk.js.map": "/origemshoplista.github.io/static/js/3.be88be88.chunk.js.map",
     "index.html": "/origemshoplista.github.io/index.html",
     "static/css/2.c490997a.chunk.css.map": "/origemshoplista.github.io/static/css/2.c490997a.chunk.css.map",
     "static/css/main.0a83420c.chunk.css.map": "/origemshoplista.github.io/static/css/main.0a83420c.chunk.css.map",
-    "static/js/2.6c30b316.chunk.js.LICENSE.txt": "/origemshoplista.github.io/static/js/2.6c30b316.chunk.js.LICENSE.txt"
+    "static/js/2.d5ab0518.chunk.js.LICENSE.txt": "/origemshoplista.github.io/static/js/2.d5ab0518.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.eff379db.js",
     "static/css/2.c490997a.chunk.css",
-    "static/js/2.6c30b316.chunk.js",
+    "static/js/2.d5ab0518.chunk.js",
     "static/css/main.0a83420c.chunk.css",
-    "static/js/main.7d81cd15.chunk.js"
+    "static/js/main.d44e5ba7.chunk.js"
   ]
 }
