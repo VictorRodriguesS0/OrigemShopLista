@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Api from "../../Api";
 
 export default class Produto extends Component {
   state = {
@@ -13,7 +14,7 @@ export default class Produto extends Component {
 
   async componentDidMount() {
     const { id } = this.props.match.params;
-    const urlProduto = `https://sheet.best/api/sheets/ac6e80c7-3b3d-4349-92aa-ff5ebf796902/id/${id}`;
+    const urlProduto = `${Api.API_BASE}/id/${id}`;
     const produtoRes = await axios.get(urlProduto);
     const produto = produtoRes.data[0];
     this.setState({

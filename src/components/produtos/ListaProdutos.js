@@ -5,33 +5,16 @@ import ListaCategorias from "../categorias/ListaCategorias";
 
 export default class ListaProdutos extends Component {
   state = {
-    produto: null,
+    produtos: this.props.produtos,
   };
 
-  componentDidMount() {
-    // const res = await axios.get(this.state.url);
-    // this.setState({ produto: res.data });
-    // console.log(this.state);
-    
-    const loadAll = async () => {
-      let listaProdutos = await Api.getProdutos();
-      
-      this.setState({produto: listaProdutos.produtos})
-      console.log("produtos", this.state.produto)
-    }
-
-    loadAll();
-  
-  }
-  
-  
   render() {
     return (
       <Fragment>
-        <ListaCategorias />
-        {this.state.produto ? (
+        <h1>Produtos</h1>
+        {this.props.produtos ? (
           <div className="row">
-            {this.state.produto.map((produto) => (
+            {this.props.produtos.map((produto) => (
               <CardProduto
                 key={produto.id}
                 id={produto.id}

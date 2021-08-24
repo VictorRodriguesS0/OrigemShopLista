@@ -52,14 +52,14 @@ export default class CardProduto extends Component {
   render() {
     return (
       <div className="col-md-3 col-sm-6 mb-5">
-        <StyleLink to={`produto/${this.state.id}`}>
+        <StyleLink to={`produto/${this.props.id}`}>
           <Card className="card">
-            {this.state.imagem ? (
+            {this.props.imagem ? (
               <Sprite
                 className="card-img-top rounded mx-auto mt-2"
                 onLoad={() => this.setState({ imageLoading: false })}
                 onError={() => this.setState({ imageError: true })}
-                src={this.state.imagem}
+                src={this.props.imagem}
               />
             ) : (
               <h6 className="mx-auto">
@@ -67,9 +67,9 @@ export default class CardProduto extends Component {
               </h6>
             )}
 
-            <h5 className="card-header">{this.state.titulo}</h5>
+            <h5 className="card-header">{this.props.titulo}</h5>
             <div className="card-body card-title mx-auto">
-              {this.state.preco}
+              {this.props.preco}
             </div>
           </Card>
         </StyleLink>
