@@ -19,5 +19,10 @@ export default {
       produtos: await pegaDados(``),
     };
   },
+  getFiltrados: async (categoria) => {
+    return {
+      produtosFiltrados: await pegaDados(`/categoria/${categoria}`),
+    };
+  },
   API_BASE,
 };

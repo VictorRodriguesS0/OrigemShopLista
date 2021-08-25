@@ -33,8 +33,11 @@ export default class Dashboard extends Component {
     return (
       <div className="row">
         <div className="col">
-          <ListaCategorias categorias={this.state.categorias}/>
-          <ListaProdutos produtos={this.state.produtos}/>
+          <ListaCategorias
+            categorias={this.state.categorias}
+            produtos={this.state.produtos}
+          />
+          {/* <ListaProdutos produtos={this.state.produtos} /> */}
         </div>
       </div>
     );

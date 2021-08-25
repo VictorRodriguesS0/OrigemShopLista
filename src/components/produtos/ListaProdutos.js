@@ -4,10 +4,6 @@ import Api from "../../Api";
 import ListaCategorias from "../categorias/ListaCategorias";
 
 export default class ListaProdutos extends Component {
-  state = {
-    produtos: this.props.produtos,
-  };
-
   render() {
     return (
       <Fragment>
