@@ -3,7 +3,7 @@
 import axios from "axios";
 
 const API_BASE =
-  "https://sheet.best/api/sheets/0a63d733-3cfb-41bb-a9e9-1967aa407f76";
+  "https://sheet.best/api/sheets/5abdfe25-e959-4f8e-9439-a8d23a1eaf93";
 
 const pegaDados = async (endpoint) => {
   const req = await axios.get(`${API_BASE}${endpoint}`);

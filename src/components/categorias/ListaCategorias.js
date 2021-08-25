@@ -36,12 +36,12 @@ export default class ListaCategorias extends Component {
       <Fragment>
         <h1>Categorias</h1>
         {this.props.categorias ? (
-          <ul className="list-group">
-            <li className="list-group-item">Todos os produtos</li>
+          <div className="list-group">
+            <button className="list-group-item list-group-item-action">Todos os produtos</button>
             {this.props.categorias.map((categoria, key) => (
-              <li className="list-group-item" key={key}>{categoria}</li>
+              <button className="list-group-item list-group-item-action" key={key}>{categoria}</button>
             ))}
-          </ul>
+          </div>
         ) : (
           <h1>Carregando Categorias</h1>
         )}
