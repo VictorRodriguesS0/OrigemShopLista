@@ -8,8 +8,8 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   return (
     <Router>
+      <NavBar />
       <div className="App">
-        <NavBar />
         <div className="container">
           <Switch>
             <Route exact path="/" component={Dashboard} />

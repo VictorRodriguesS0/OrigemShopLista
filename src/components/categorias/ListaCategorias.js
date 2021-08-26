@@ -16,8 +16,6 @@ export default class ListaCategorias extends Component {
     this.setState({
       categorias: listaCategorias,
     });
-
-    console.log(listaCategorias, this.props.categorias);
   }
 
   async handleClick(entrada, categoria) {
@@ -55,7 +53,9 @@ export default class ListaCategorias extends Component {
               onClick={() => this.handleClick(true)}
             >
               Todos os produtos
+              <span class="badge bg-primary rounded-pill">{}</span>
             </button>
+
             {this.props.categorias.map((categoria, key) => (
               <button
                 className="list-group-item list-group-item-action"
@@ -69,7 +69,12 @@ export default class ListaCategorias extends Component {
         ) : (
           <h1>Carregando Categorias</h1>
         )}
-        <ListaProdutos produtos={this.state.produtosFiltrados} />
+        {/* Tentativa de renderizar a lista de produtos completa como default */}
+        {this.state.produtosFiltrados ? (
+          <ListaProdutos produtos={this.state.produtosFiltrados} />
+        ) : (
+          <ListaProdutos produtos={this.props.produtos} />
+        )}
       </Fragment>
     );
   }
